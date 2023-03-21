@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styleindex2.css">
+    <!-- ////////////////////////////////////////// -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- ////////////////////////////////////////// -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class= "navbar background">
+        <ul class= "nav-list ">
+            <div class= "logo"><img src="logo.png" alt="logo"></div>
+            <li><a href="http://127.0.0.1:5500/index.html">Home </a> </li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#trainers">Trainers</a> </li>
+            <li><a href="#train">Train</a> </li>
+            <li><a href="#trackers">Trackers</a> </li>
+            <li><a href="#profile">Profile</a> </li>
+
+        </ul>
+
+        <div class= "rightNav">
+            <input type= "text" name="search" id="search">\
+            <button class= " btn btn-sm "> Search </button>
+        </div>
+    </nav>
+    <style>
+        * {
+margin: 0;
+padding: 0;
+}
+
+.logo {
+width: 900px;
+height: 50px;
+/* padding: ; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo img {
+width: 100px;
+display: flex;
+border: 5px solid white;
+border-radius: 50px;
+}
+
+.navbar {
+display: flex;
+font-size: larger;
+padding: 100px;
+justify-content: center;
+align-items: center;
+position: sticky;
+top: 0;
+cursor: pointer;
+}
+
+.nav-list {
+/* justify-content: center; */
+display: flex;
+align-items: center;
+width: 50%;
+/* background-color: black; */
+}
+
+.nav-list li a {
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
+
+.nav-list li a:hover {
+text-decoration: none;
+color: grey;
+}
+
+.nav-list li {
+list-style: none;
+padding: 26px 30px;
+}
+
+.background {
+background: rgba(0, 0, 0, 0.7) url('nav.jpg');
+background-size: cover;
+background-blend-mode: darken;
+padding: 45px;
+}
+.rightNav {
+width: 900px;
+height: 50px;
+padding: 10px ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    </style>
+    <!-- ////////////////// -->
+    
+    <div class="container">
+
+        <div class="box1">
+
+            <script type="text/javascript" src="declare.js"></script>
+
+            <script>
+                var json4real = JSON.parse(jsonstr);
+                // document.write('BICEP CURL\n')<br>
+                document.write('Number of Reps :',jsonstr) 
+            </script>
+
+            <script>
+                var x = jsonstr
+
+                if(x == 1){
+                    // document.getElementById('one').play();
+                    let audio = new Audio("one.mp3");
+                     audio.play()
+                     }
+                else if(jsonstr == '3' || jsonstr == '4' || jsonstr == '6'){
+                     let audio = new Audio("come_on.mp3");
+                     audio.play()
+                     }
+                else if(jsonstr == '5'){
+                     let audio = new Audio("five_more.mp3");
+                     audio.play()
+                     }
+                else if(jsonstr == '7'){
+                     let audio = new Audio("three_more.mp3");
+                     audio.play()
+                     }
+                else if(jsonstr == '9'){
+                     let audio = new Audio("one_more.mp3");
+                     audio.play()
+                     }
+                else if(jsonstr == '10'){
+                     let audio = new Audio("well_done.mp3");
+                     audio.play()
+                    //  document.write('WELL DONE')
+                     }
+            </script>
+
+
+            <div class="box3">
+                <video width="400" height="400" controls autoplay muted loop>
+                    <source src="bicep.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+        </div>
+
+        <div class="box2" >
+            <center><video id="video" width="640" height="480" autoplay></video></center>
+            <script>
+            var video = document.getElementById('video'),
+                vendorUrl = window.URL || window.webkitURL;
+            if (navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function (stream) {
+                        video.srcObject = stream;
+                    }).catch(function (error) {
+                        console.log("Something went wrong!");
+                    });
+            }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

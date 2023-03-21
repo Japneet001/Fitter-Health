@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+    /* padding: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* background-color: black; */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(nav.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 45px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.profile {
+    background: rgba(0, 0, 0, 0.7) url(abs.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+/* .profile2 {
+    background: rgba(0, 0, 0, 0.7) url(legs.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+
+.profile3 {
+    background: rgba(0, 0, 0, 0.7) url(arms.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.profile4 {
+    background: rgba(0, 0, 0, 0.7) url(chest.jpeg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.profile5 {
+    background: rgba(0, 0, 0, 0.7) url(back.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.parText {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container1 {
+    background: rgba(0, 0, 0, 0.7) url(train.jpg);
+    padding: 100px 0px;
+    background-blend-mode: soft-light;
+}
+
+.a {
+    color: black;
+}
